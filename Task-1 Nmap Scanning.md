@@ -5,7 +5,7 @@
 
 The objective of this task was to perform a service detection scan using Nmap to identify open ports, running services, and version information on a target host within a virtualized network environment. This activity demonstrates basic network reconnaissance and service enumeration techniques commonly used during security assessments.
 
----
+
 
 ## Environment
 
@@ -14,7 +14,7 @@ The objective of this task was to perform a service detection scan using Nmap to
 - **Target IP Address:** `192.168.72.128`
 - **Scanning Tool:** Nmap v7.99
 
----
+
 
 ## Methodology
 
@@ -30,7 +30,7 @@ nmap -sV -T4 -oN nmap_result.txt 192.168.72.128
 * **-T4** : Uses an aggressive timing template to speed up the scan.
 * **-oN** : Saves the scan results in normal format to a file named `nmap_result.txt`.
 
----
+
 
 ## Scan Results
 
@@ -45,7 +45,7 @@ nmap -sV -T4 -oN nmap_result.txt 192.168.72.128
 * **Operating System:** Linux
 * **CPE:** `cpe:/o:linux:linux_kernel`
 
----
+
 
 ## Security Analysis
 
@@ -67,7 +67,7 @@ DNS servers play a critical role in network communication and are often targeted
 * **Zone Transfer Misconfiguration:** Unauthorized users may obtain DNS zone information if transfers are not restricted.
 * **Denial-of-Service (DoS) Attacks:** DNS services can be abused to disrupt network availability.
 
----
+
 
 ## Recommended Security Measures
 
@@ -78,13 +78,12 @@ DNS servers play a critical role in network communication and are often targeted
 5. Regularly update and patch the DNS server software.
 6. Monitor DNS logs for unusual or suspicious activity.
 
----
 
 ## Conclusion
 
 The Nmap service detection scan identified a single open port, **53/TCP**, running the **ISC BIND DNS service** on a Linux host. The service appears to be functioning normally and is likely providing DNS resolution within the virtualized network environment. While DNS services are essential for network operations, they should be properly secured and monitored to prevent abuse and potential attacks.
 
----
+
 
 ## Screenshot
 
