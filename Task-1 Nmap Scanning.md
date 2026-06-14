@@ -22,6 +22,7 @@ The scan was executed using the following command:
 
 ```bash
 nmap -sV -T4 -oN nmap_result.txt 192.168.72.128
+```
 
 ### Command Parameters
 
