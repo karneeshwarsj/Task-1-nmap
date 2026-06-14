@@ -89,8 +89,3 @@ The Nmap service detection scan identified a single open port, **53/TCP**, runni
 ## Screenshot
 
 ![Nmap Service Detection Scan Result](nmap_output_1.png)
-
-```
-
-This version matches the scan shown in your screenshot, including the correct target IP (`192.168.72.128`), open port (`53/tcp`), and detected service (`ISC BIND 9.20.23-1`), while removing the `tcpwrapped` section since the current scan shows the port as **open** with successful service detection.
-```
